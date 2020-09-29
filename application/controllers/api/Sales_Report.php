@@ -23,16 +23,6 @@ class Sales_Report extends REST_Controller {
         }else{
             $data = $this->Sales_Report_model->get_sales_report();
         }
-        // $salesReps = $this->Employees_model->get_Employees(['jobTitle'=> 'Sales Rep']);
-
-
-
-        // $data = $this->db->get("orders")->result();
-        // $offices = $this->Offices_model->get_offices();
-        // foreach ($offices as $key => $office) {
-        //     $employees = $this->Employees_model->get_Employees(['officeCode'=> $office['officeCode']]);
-        //     $offices[$key]['employees'] = $employees;
-        // }
 
         $this->response($data, REST_Controller::HTTP_OK);
 	}
