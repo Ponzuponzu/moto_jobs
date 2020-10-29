@@ -133,6 +133,5 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array(
-	'api/Employees_model',
-	'api/Offices_model'
+	'paint_jobs_model'
 );
